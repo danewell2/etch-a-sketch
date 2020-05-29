@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-wrap {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header {
+    padding: 1rem;
+}
+
+.header__heading {
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 600px;
+    height: 600px;
+    min-width: 600px;
+    min-height: 600px;
+    margin: 0 1rem 0 10rem;
+}
+
+.grid-container > * {
+    display: block;
+}
+
+.form-group {
+    display: flex;
+    padding: .5rem 0;
+}
+
+.form-group:first-child {
+    flex-direction: column;
+}
+
+.controls-form__button {
+    margin-top: .5rem;
+}
+
+.controls-form__label {
+    margin-left: .5rem;
+}
+
+.input_type_text {
+    padding: .2rem .2rem;
+    height: 2rem;
+}
+
+.button {
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+}
+
+.input_type_checkbox[name="displayGrid"] {
+    width: 1rem;
+    height: 1rem;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Etch a Sketch</title>
+</head>
+
+<body>
+    <div class="page-wrap">
+        <header class="header">
+            <h1 class="header__heading">Etch a Sketch</h1>
+        </header>
+        <section class="main">
+            <div class="grid-container">
+
+            </div>
+            <aside class="controls">
+                <form class="controls-form">
+                    <div class="form-group">
+                        <input class="input input_type_text controls-form__input" type="text" name="dimensions"
+                            placeholder="Grid dimensions">
+                        <button type="button" name="reset" class="button controls-form__button button_action_reset">
+                            Reset
+                        </button>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input input_type_checkbox controls-form__input" type="checkbox" name="displayGrid"
+                            checked>
+                        <label class="controls-form__label" for="displayGrid">Display grid</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input input_type_radio controls-form__input" type="radio" value="blackWhite"
+                            name="colorChoice" checked>
+                        <label class="controls-form__label" for="blackWhite">Black & White</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="input input_type_radio controls-form__input" type="radio" value="random"
+                            name="colorChoice">
+                        <label class="controls-form__label" for="random">Random Color</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="input input_type_radio controls-form__input" type="radio" value="shade"
+                            name="colorChoice">
+                        <label class="controls-form__label" for="shade">Shade</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="input input_type_radio controls-form__input" type="radio" value="tint"
+                            name="colorChoice">
+                        <label class="controls-form__label" for="tint">Tint</label>
+                    </div>
+                </form>
+            </aside>
+        </section>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
